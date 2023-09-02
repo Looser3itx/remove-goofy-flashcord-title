@@ -1,0 +1,32 @@
+.platform-win body > :before {
+  content: "discord";
+}
+
+.platform-linux body > :before {
+  content: "discord";
+}
+.platform-linux #app-mount {
+  margin-top: 24px;
+  height: calc(100vh - 24px);
+}
+
+.platform-osx body:before {
+  content: "discord";
+  color: #ffffff;
+  text-align: right; 
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 32px;
+  margin-left: -12px;
+}
+.platform-osx #app-mount {
+  margin-top: 32px;
+  height: calc(100vh - 32px);
+}
+[class^="macDragRegion-"] {
+  width: 100vw;
+}
